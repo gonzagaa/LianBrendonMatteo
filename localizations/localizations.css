@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --primary-color: #e8bf52;
+    --secondary-color: #ffc018;
+    --color-text: #fff;
+    --paragraphy-color: #626262;
+}  
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+  section {
+    padding-block: 10rem;
+  }
+
+/* localizations =================== */
+
+#localizations {
+  background-color: #FFFFFF;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23FFFFFF' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23FFFFFF' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23f8f8f8' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f2f2f2' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ececec' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e5e5e5' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23dfdfdf' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23d8d8d8' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23d2d2d2' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23cccccc' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23c6c6c6' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23bfbfbf' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23b9b9b9' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23b3b3b3' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23adadad' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23a7a7a7' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23a1a1a1' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%239b9b9b' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23959595' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#localizations header h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+
+  margin-bottom: 1rem;
+}
+
+#localizations header p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--paragraphy-color);
+}
+
+#localizations .locals {
+  margin-top: 6rem;
+  display: grid;
+  gap: 3rem;
+}
+
+#localizations .locals .local {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+}
+
+#localizations .locals .local img {
+  width: 4rem;
+}
+
+#localizations .locals .local p {
+ font-weight: 500;
+ color: #000000f4;
+}
+
+#localizations .locals .local p a {
+  font-weight: 600;
+  color: #000;
+
+  transition: all 200ms ease-in
+ }
+
+ #localizations .locals .local p a:hover {
+  font-weight: 600;
+  color: var(--secondary-color);
+ }
+
+#localizations .locals .local a button {
+  margin-top: 2rem;
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 1rem 2rem;
+  color: #000;
+  font-weight: 700;
+  border-radius: 1rem;
+
+  transition: all 200ms ease-in;
+}
+
+#localizations .locals .local a:hover button {
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (min-width: 1300px) {
+  section#localizations .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  section#localizations header {
+    width: min(70rem, 100%);
+  }
+
+  section#localizations .locals {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10rem;
+    gap: 8rem;
+  }
+}

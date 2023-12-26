@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lian Brendon Matteo</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./navigation/navigation.css">
+    <link rel="stylesheet" href="./localizations/localizations.css">
+</head>
+<body>
+    
+    <nav id="navigation" class="">
+
+        <div class="wrapper">
+
+            <a class="logo" href="#home">
+                <img src="./assets/logo.png" alt="">
+            </a>
+            
+            <div class="menu">
+
+                <ul>
+                    <li><a onclick="closeMenu()" href="#home">Principal</a></li>
+                    <li><a onclick="closeMenu()" href="./institucional/institucional.html">O Escritório</a></li>
+                    <li><a onclick="closeMenu()" href="./downloads/downloads.html">Áreas de Atuação</a></li>
+                    <li><a onclick="closeMenu()" href="./eventos/eventos.html">Registro de Marca</a></li>
+                </ul>
+
+                <a class="button" href="#"><button>
+                    Atendimento
+                </button></a>
+ 
+                 <ul class="social-links">
+                     <li>
+                         <a target="_blank" href="#">
+                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M17.73 6.27V1.5H16.73C14.7124 1.5132 12.782 2.32396 11.36 3.75531C9.93804 5.18665 9.13998 7.12238 9.14002 9.14V10.09H6.27002V13.91H9.14002V22.5H13.91V13.91H16.77V10.09H13.91V9.14C13.9087 8.76358 13.9817 8.3906 14.1248 8.04245C14.268 7.69431 14.4784 7.37784 14.7442 7.11121C15.0099 6.84457 15.3256 6.63301 15.6732 6.48866C16.0209 6.3443 16.3936 6.27 16.77 6.27H17.73Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                 </svg>
+                                 
+                         </a>
+                     </li>
+ 
+                     <li>
+                         <a target="_blank" href="#">
+                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <g clip-path="url(#clip0_273_69)">
+                                 <path d="M18.68 1.5H5.32C3.21027 1.5 1.5 3.21027 1.5 5.32V18.68C1.5 20.7897 3.21027 22.5 5.32 22.5H18.68C20.7897 22.5 22.5 20.7897 22.5 18.68V5.32C22.5 3.21027 20.7897 1.5 18.68 1.5Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                 <path d="M12 16.77C14.6344 16.77 16.77 14.6344 16.77 12C16.77 9.36558 14.6344 7.22998 12 7.22998C9.36558 7.22998 7.22998 9.36558 7.22998 12C7.22998 14.6344 9.36558 16.77 12 16.77Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                 <path d="M18.2 7.23012C18.9898 7.23012 19.63 6.58988 19.63 5.80012C19.63 5.01035 18.9898 4.37012 18.2 4.37012C17.4103 4.37012 16.77 5.01035 16.77 5.80012C16.77 6.58988 17.4103 7.23012 18.2 7.23012Z" fill="white"/>
+                                 </g>
+                                 <defs>
+                                 <clipPath id="clip0_273_69">
+                                 <rect width="24" height="24" fill="white"/>
+                                 </clipPath>
+                                 </defs>
+                                 </svg>
+                                 
+                         </a>
+                     </li>
+ 
+                     <li>
+                         <a target="_blank" href="#">
+                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M23 1H1V22.04H23V1Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                 <path d="M10.5701 18.2199V11.9999C10.5688 11.5604 10.6542 11.1251 10.8214 10.7187C10.9887 10.3123 11.2345 9.94291 11.5448 9.6317C11.8551 9.32049 12.2237 9.07357 12.6296 8.9051C13.0355 8.73662 13.4706 8.6499 13.9101 8.6499C14.7986 8.6499 15.6506 9.00285 16.2789 9.63109C16.9071 10.2593 17.2601 11.1114 17.2601 11.9999V18.2199" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                 <path d="M6.73999 7.68994V18.2199" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                 <path d="M10.5701 7.68994V12.4799" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                 </svg>
+                                 
+                         </a>
+                     </li>
+                 </ul>
+ 
+             </div>
+
+            <button 
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            onclick="openMenu()" 
+            class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </button>
+            <button
+            aria-expanded="true"
+            aria-label="Fechar menu"
+            onclick="closeMenu()" 
+            class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+            </button>
+
+        </div>
+           
+    </nav>
+
+    <header id="home">
+
+        <div class="wrapper-home">
+            <div class="banner">
+                <video autoplay muted loop>
+                    <source src="./assets/pexels-ekaterina-bolovtsova-6101343 (2160p).mp4" type="video/mp4">
+                </video>
+                <div class="content">
+                    <h1>Levamos a sério <span>performance</span> e <span>excelência jurídica</span></h1>
+
+                    <a class="arrow" href="#services"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#FFC018" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm37.66-85.66a8,8,0,0,1,0,11.32l-32,32a8,8,0,0,1-11.32,0l-32-32a8,8,0,0,1,11.32-11.32L120,148.69V88a8,8,0,0,1,16,0v60.69l18.34-18.35A8,8,0,0,1,165.66,130.34Z"></path></svg></a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="services">
+        <div class="custom-shape-divider-bottom-1698431678">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="wrapper">
+            <div class="header">
+                <span>LIAN BRENDON MATTEO</span>
+
+                <h2>Atendimento diferenciado. <span>Atuamos em diversas áreas do direito.</span></h2>
+
+                <p>Advogados especialistas em cada área de atuação, proporcionando o melhor conhecimento e serviço ao caso concreto.</p>
+
+                <a href="#"><button>SAIBA MAIS</button></a>
+            </div>
+
+            <div class="cards">
+                <div class="card first">
+                    <img class="civil" src="./assets/civil.png" alt="">
+                    <h3>Direito Civil</h3>
+                    <p>O direito civil constitui a base da relação jurídica onde tem-se a reunião do complexo de normas que disciplinam os interesses privados.</p>
+                </div>
+
+                <div class="card second">
+                    <img class="previdenciario" src="./assets/previdenciario.png" alt="">
+                    <h3>Direito Previdenciário</h3>
+                    <p>A Lian Brendon Matteo oferece assessoria jurídica em relação às questões previdenciárias. Consultoria jurídica na área de previdência social.</p>
+                </div>
+
+                <div class="card first">
+                    <img class="trabalho" src="./assets/trabalho.png" alt="">
+                    <h3>Direito do Trabalho</h3>
+                    <p>Advogados e especialistas na área buscando atualização constante de suas teses, jurisprudências e doutrinas mais recentes.</p>
+                </div>
+
+                <div class="card second">
+                    <img class="consumidor" src="./assets/consumidor.png" alt="">
+                    <h3>Direito do Consumidor</h3>
+                    <p>Envolve problemas inerentes à qualidade de produtos e serviços, prevenção e reparação de danos oriundos de relação de consumo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="values">
+        <div class="wrapper">
+            <div class="vision">
+                <h2>VISÃO</h2>
+                <p>Ser o maior escritório de Advocacia do Brasil e o mais conceituado centro de referência em formação e aprendizado de prática processual forense em âmbito Nacional.</p>
+            </div>
+
+            <div class="mission">
+                <h2>MISSÃO</h2>
+                <p>Entregar ao(s) cidadão(s) aconselhamentos e informações jurídicas relevantes e com qualidade, tornando-os cada vez mais conscientes de seus direitos, deveres e obrigações, conscientizando-os para que contribuam para um país melhor.</p>
+            </div>
+
+            <div class="value">
+                <h2>VALORES <span>LIAN BRENDON MATTEO</span></h2>
+
+                <div class="cards">
+                    <div class="card">
+                        <img src="./assets/excelência.png" alt="">
+                        <h3>EXCELÊNCIA</h3>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/meio-ambiente.png" alt="">
+                        <h3>RESPEITO AO MEIO AMBIENTE</h3>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/qualidade.png" alt="">
+                        <h3>QUALIDADE</h3>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/humanidade.png" alt="">
+                        <h3>RESPEITO À HUMANIDADE</h3>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/transparência.png" alt="">
+                        <h3>TRANSPARÊNCIA</h3>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/gratidão.png" alt="">
+                        <h3>GRATIDÃO</h3>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/contribuição.png" alt="">
+                        <h3>CONTRIBUIÇÃO</h3>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/ética.png" alt="">
+                        <h3>ÉTICA</h3>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/honestidade.png" alt="">
+                        <h3>HONESTIDADE</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="localizations">
+        <div class="wrapper">
+            <header>
+                <h2>Encontre onde estamos localizados:</h2>
+                <p>Alinhados na necessidade e mudança constante de ferramentas efetivas e levando em conta a importância do contato direto ao nosso cliente, disponibilizamos em vários Estados a possibilidade de atendimento único e personalizado visando a realização de sonhos individuais e empresariais em busca sempre do crescimento e da evolução de sua trajetória não só profissional mas de vida.</p>
+            </header>
+            
+            <div class="locals">
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Aparecida de Goiânia:</h3>
+                    <p>Rua 09, quadra 16-C, Lotes 01/14, Sala 57, Garavelo Center Shopping, Bairro: Cardoso Continuação, Aparecida de Goiânia, GO</p>
+                    <p>CEP: 74.934-070</p>
+                    <p>Telefone: (62)99236-1027</p>
+                    <p>Whatsapp: <a href="#">+5562992361027</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Goiânia - GO</h3>
+                    <p>Avenida Barão do Rio Branco, Quadra 04, Lote 01, Sala 01, Jardim Vila Boa, Goiânia, GO</p>
+                    <p>CEP: 74.360-230</p>
+                    <p>Telefone: (62)99236-1027</p>
+                    <p>Whatsapp: <a href="#">+5562992361027</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Anápolis:</h3>
+                    <p>R. Cel. Batista, 415 - St. Central, London Offices, Anápolis - GO</p>
+                    <p>CEP: 75020-080</p>
+                    <p>Telefone: (62) 99236-1027</p>
+                    <p>Whatsapp: <a href="#">+5562992361027</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Brasília:</h3>
+                    <p>SHCS, Setor de Habitações Coletivas Sul CR Comercio Residencial, Qd 502, Bloco C, Loja 37, Parte 2557, Asa Sul<p>
+                    <p>CEP: 70330-530</p>
+                    <p>Telefone: (61)99957-0188</p>
+                    <p>Whatsapp: <a href="#">+5561999570188</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Brasília (II):</h3>
+                    <p>Setor Comercial Norte, Quadra 04, Bloco B, Sala 702, 7º andar, Asa Norte, Brasília/DF</p>
+                    <p>CEP: 70714-020</p>
+                    <p>Telefone: (61)99957-0188</p>
+                    <p>Whatsapp: <a href="#">+5561999570188</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade São Paulo:</h3>
+                    <p>AVENIDA PAULISTA, 1471 – Conj. 511 Caixa postal 794, Bela Vista - São Paulo – SP</p>
+                    <p>CEP: 01311-927</p>
+                    <p>Telefone: (11)2667-3589</p>
+                    <p>Whatsapp: <a href="#">+551191152-1714</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Rio de Janeiro:</h3>
+                    <p>Av. Atlântica, 3264 – 5º Andar – Copacabana, Rio de Janeiro – RJ</p>
+                    <p>CEP: 22070-001</p>
+                    <p>Telefone: (21)96708-6116</p>
+                    <p>Whatsapp: <a href="#">+5521967086116</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Curitiba:</h3>
+                    <p>Rua XV de novembro 964, 3º andar, Conjunto 30, Centro</p>
+                    <p>CEP: 80060-000</p>
+                    <p>Telefone: (41)99204-5714</p>
+                    <p>Whatsapp: <a href="#">+5541992045714</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Vitória:</h3>
+                    <p>Av. João Baptista Parra, Nº 633, Sala 1401, Ed. Enseada Office, Praia do Suá</p>
+                    <p>CEP: 29052-123</p>
+                    <p>Telefone: (27)99841-2628</p>
+                    <p>Whatsapp: <a href="#">+5527998412628</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Canela:</h3>
+                    <p>Rua Batista Luzardo 167, Centro, Canela - RS</p>
+                    <p>CEP:</p>
+                    <p>Telefone: (54)99698-7294</p>
+                    <p>Whatsapp: <a href="#">+5554996987294</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Porto Alegre:</h3>
+                    <p>Av Cristóvão Colombo, 2955 Conj. 401 - Porto Alegre / RS</p>
+                    <p>CEP: 90560-005</p>
+                    <p>Telefone: (54)99698-7294</p>
+                    <p>Whatsapp: <a href="#">+5554996987294</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Belo Horizonte:</h3>
+                    <p>R. da Bahia, 888 - Centro, Belo Horizonte - MG</p>
+                    <p>CEP: 30160-011</p>
+                    <p>Telefone: (31)99762-6886</p>
+                    <p>Whatsapp: <a href="#">+5531997626886</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Primavera:</h3>
+                    <p>Passeio Primavera, SC 401, KM 4. Rodovia José Carlos Daux, 4150, Salas 01 e 02, Saco Grande, Florianópolis/SC</p>
+                    <p>CEP: 88032-005</p>
+                    <p>Telefone: (48)99205-3760</p>
+                    <p>Whatsapp: <a href="#">+5548992053760</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Maranhão:</h3>
+                    <p>Av. Jerônimo de Albuquerque, 6 - Vinhais São Luís - MA</p>
+                    <p>CEP: 65074-380</p>
+                    <p>Telefone: (98) 99237-7539</p>
+                    <p>Whatsapp: <a href="#">+5598992377539</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Recife:</h3>
+                    <p>Pernambuco: Rua Buenos Ayres, 80, Espinheiro, Recife, PE</p>
+                    <p>CEP: 52020-180</p>
+                    <p>Telefone: (62)99236-1027</p>
+                    <p>Whatsapp: <a href="#">+5562992361027</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Manaus:</h3>
+                    <p>Av. João Valério, 753 Nossa Senhora das Graças, Manaus, AM</p>
+                    <p>CEP: 69053-180</p>
+                    <p>Telefone: (92) 99372-5017</p>
+                    <p>Whatsapp: <a href="#">+5592993725017</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Salvador:</h3>
+                    <p>Mundo Plaza Empresarial - Av. Tancredo Neves, 620 - Caminho das Árvores, Salvador - BA</p>
+                    <p>CEP: 41820-020</p>
+                    <p>Telefone: (71) 99697-7712</p>
+                    <p>Whatsapp: <a href="#">+5571996977712</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Palmas:</h3>
+                    <p>Ac. Q. 204 Sul Avenida Ló 5 - Plano Diretor Sul - Palmas, TO</p>
+                    <p>CEP:</p>
+                    <p>Telefone: (63) 99911-6119</p>
+                    <p>Whatsapp: <a href="#">+5563999116119</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Macapá:</h3>
+                    <p>Av. dos Caramurus, nº;. 1293A, Buritizal, Macapá/AP</p>
+                    <p>CEP: 68902-863</p>
+                    <p>Telefone: (96) 99117-1453</p>
+                    <p>Whatsapp: <a href="#">+5596991171453</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Campo Grande:</h3>
+                    <p>Avenida Afonso Pena, nº: 2440 - Salas 62, 152 e 153 - Centro, Campo Grande - MS</p>
+                    <p>CEP: 79002-934</p>
+                    <p>Telefone: (67) 99911-8471</p>
+                    <p>Whatsapp: <a href="#">+5567999118471</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Cuiabá:</h3>
+                    <p>Av. Historiador Rubens de Mendonça, nº 1836 Ed. Work Center, 3º Andar, Sala 306 - Jardim Aclimacao, Cuiabá - MT</p>
+                    <p>CEP: 78050-280</p>
+                    <p>Telefone: (65) 99920-2192</p>
+                    <p>Whatsapp: <a href="#">+5565999202192</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Porto Velho:</h3>
+                    <p>Av. Sete de Setembro, 1925, Nossa Sra. das Graças - Porto Velho - RO</p>
+                    <p>CEP: 76820-120</p>
+                    <p>Telefone: (69) 99955-8214</p>
+                    <p>Whatsapp: <a href="#">+5569999558214</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Belém:</h3>
+                    <p>Rua Avertano Rocha. 192, Campina, Belém - PA</p>
+                    <p>CEP: 66023-120</p>
+                    <p>Telefone: (91) 99344-4271</p>
+                    <p>Whatsapp: <a href="#">+5591993444271</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Boa Vista:</h3>
+                    <p>Av. Ville Roy, nº; 5618 - Centro, Boa Vista - RR</p>
+                    <p>CEP: 69301-000</p>
+                    <p>Telefone: (95) 99161-0749</p>
+                    <p>Whatsapp: <a href="#">+5595991610749</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Paraíba:</h3>
+                    <p>Av. Ruy Carneiro, 115, Brisamar, João Pessoa, Paraíba, PB
+                    </p>
+                    <p>CEP: 58032-100</p>
+                    <p>Telefone: (82) 98207-9964</p>
+                    <p>Whatsapp: <a href="#">+5582982079964</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+
+                <div class="local">
+                    <img src="./assets/map-pin.svg" alt="Map pin image">
+
+                    <h3>Unidade Maceió:</h3>
+                    <p>R. Epaminondas Gracindo, 22 - Pajuçara, Maceió - AL</p>
+                    <p>CEP: 57030-101</p>
+                    <p>Telefone: (81) 98243-1241</p>
+                    <p>Whatsapp: <a href="#">+5581982431241</a></p>
+
+                    <a href="#"><button>COMO CHEGAR</button></a>
+                </div>
+ 
+            </div>
+        </div>
+    </section>
+
+    <a id="buttonWhatsapp" class="show" target="_blank" href="https://instagram.com/brazilaudiovisual?igshid=NzZhOTFlYzFmZQ==">
+
+        <img src="./assets/whatsapp logo.webp" alt="">
+
+    </a>
+
+    <script src="./script.js"></script>
+</body>
+</html> 
