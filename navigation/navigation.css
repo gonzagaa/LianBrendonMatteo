@@ -161,7 +161,7 @@ nav {
     right: 0;
     background: var(--secondary-color);
   
-    width: 50vw;
+    width: 100vw;
     height: 100vh;
 
     display: flex;
@@ -196,7 +196,7 @@ nav {
   }
   
   .menu ul li a:hover {
-    color: var(--secondary-color);
+    color: #000;
   }
   
   .menu .button {
@@ -209,7 +209,7 @@ nav {
     text-transform: uppercase;
     text-decoration: none;
   
-    color: var(--color-text);
+    color: var(--secondary-color);
   
     display: inline-block;
     padding: 1.6rem 3.2rem;
@@ -218,10 +218,6 @@ nav {
     margin-bottom: 8rem;
   
     transition: all 200ms ease-in-out;
-  }
-  
-  .menu .button:hover {
-    background-color: var(--secondary-color);
   }
   
   .social-links {

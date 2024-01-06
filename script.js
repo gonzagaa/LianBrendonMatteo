@@ -44,3 +44,5 @@ ScrollReveal().reveal(
 
 ScrollReveal().reveal('#values .card', { distance: '200px', scale: 0.5, opacity: 0.5 ,duration: 700, easing: 'ease-in-out'});
 
+ScrollReveal().reveal('#areas details', { distance: '400px', origin: 'top', duration: 500, easing: 'ease-in-out'});
+
