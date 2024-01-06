@@ -48,6 +48,13 @@ html {
   }
 
 /* HOME =================== */
+#home {
+  background-image: url(./assets/fundo\ mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 33%;
+}
+
 .banner {
     width: 100%;
     height: 100vh;
@@ -243,6 +250,56 @@ html {
   width: 8rem;
 }
 
+/* System =================== */ 
+#system {
+  background-color: #dfdfdf;
+}
+
+#system img {
+  width: 25rem;
+}
+
+#system h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--paragraphy-color);
+
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+#system h2 span {
+  font-weight: 700;
+  color: #015A06;
+}
+
+#system p {
+  color: #000000ad;
+  font-weight: 400;
+}
+
+#system a button {
+  background-color: #015A06;
+  color: var(--color-text);
+  border: none;
+  padding: 1.5rem 2.5rem;
+  border-radius: 1.3rem;
+  outline: none;
+
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  transition: all 200ms ease-in-out;
+
+  margin-top: 3rem;
+}
+
+#system a button:hover {
+  color: var(--color-text);
+  cursor: pointer;
+  background-color: #026c07;
+}
+
 /* values =================== */ 
 
 #values {
@@ -301,6 +358,59 @@ html {
   margin-top: 1rem;
 }
 
+/* works =================== */
+#works {
+  background-color: #E9E9E9;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23e0e0e0' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23d6d6d6' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%23cdcdcd' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23c3c3c3' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23bababa' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23b0b0b0' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23A7A7A7' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
+
+#works h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+
+  margin-bottom: 8rem;
+}
+
+#works .cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  justify-content: center;
+}
+
+#works .cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.11);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.3px);
+  -webkit-backdrop-filter: blur(2.3px);
+  border: 1px solid rgba(255, 255, 255, 1);
+
+  box-shadow:  20px 20px 60px #8f8f8fc8,
+              -20px -20px 60px #bfbfbfc0;
+}
+
+#works .cards .card h3 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+#works .cards .card .acompanhamento,
+#works .cards .card .recursos {
+  font-size: 1.4rem;
+}
+
 /* buttonWhatsapp =================== */
 #buttonWhatsapp {
   position: fixed;
@@ -332,6 +442,13 @@ html {
 }
 
 @media (min-width: 1300px) {
+   header#home {
+      background-image: none;
+      background-repeat: initial;
+      background-size: initial;
+      background-position: initial;
+  }
+
   section#services .wrapper {
     display: flex;
     flex-direction: row;
@@ -349,6 +466,23 @@ html {
     margin-top: initial;
   }
 
+  section#system .wrapper {
+    display: flex;
+    gap: 4rem;
+  }
+
+  section#system img {
+    width: 30rem;
+  }
+
+  section#system h2 {
+    margin-top: initial;
+  }
+
+  section#system .content {
+    text-align: right;
+  }
+
   section#values .wrapper {
     width: min(70rem, 100%);
     gap: 7rem;
@@ -363,6 +497,8 @@ html {
     font-size: 1.6rem;
   }
 
- 
+  section#works .wrapper .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   
 }

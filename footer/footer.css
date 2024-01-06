@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --primary-color: #e8bf52;
+    --secondary-color: #ffc018;
+    --color-text: #fff;
+    --paragraphy-color: #626262;
+}  
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+  section {
+    padding-block: 10rem;
+  }
+
+/* footer =================== */
+
+#footer {
+    background-color: #000;
+}
+
+#footer img {
+    width: 25rem;
+}

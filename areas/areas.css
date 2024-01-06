@@ -1,0 +1,98 @@
+nav {
+    background-color: rgba(0, 0, 0, 0.700);
+}
+
+#areas {
+    background-color: #E9E9E9;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23e0e0e0' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23d6d6d6' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%23cdcdcd' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23c3c3c3' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23bababa' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23b0b0b0' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23A7A7A7' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#areas header h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+#areas header p {
+    font-size: 1.4rem;
+    color: #000000be;
+    font-weight: 600;
+
+    margin-bottom: 5rem;
+}
+
+#areas .details {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#areas details {
+    text-align: left;
+}
+
+#areas details h3 {
+    padding-left: 2rem;
+    margin-top: 2rem;
+
+    font-size: 5rem;
+}
+
+#areas details p {
+    padding-left: 2rem;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #000000ad;
+}
+
+#areas details ul {
+    list-style: disc;
+    padding-left: 3rem;
+
+    margin-top: 2rem;
+    font-weight: 600;
+    color: #000000ad;
+}
+
+#areas details summary {
+    all: unset;
+    width: 100%;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#areas details summary .arrow {
+    padding-right: 2rem;
+}
+
+#areas details summary h2 {
+    padding: 2rem;
+    font-size: 1.8rem;
+}
+
+details[open] summary .arrow svg {
+    transition: transform 200ms ease-in-out;
+}
+
+details[open] summary .arrow svg {
+    transform: rotate(180deg);
+}
+
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    from {
+        opacity: 0; margin-top: -10px;
+    }
+    to {
+        opacity: 1; margin-top: 0;
+    }
+}
