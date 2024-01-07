@@ -40,5 +40,49 @@ html {
 }
 
 #footer img {
-    width: 25rem;
+    width: 27rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+#footer p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #c5c5c5;
+}
+
+#footer .qualifications {
+  width: 70%;
+
+  background: rgba(189, 189, 189, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(5.1px);
+  border: 1px solid rgba(189, 189, 189, 0.76);
+
+  padding-top: 1.2rem;
+  padding-bottom: .8rem;
+  padding-inline: 1rem;
+
+  border-radius: 1.5rem;
+}
+
+#footer .social-links {
+  padding: 3rem;
+}
+
+#footer .social-links svg {
+  transition: all 200ms ease-in-out;
+}
+
+#footer .social-links svg:hover {
+  fill: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+@media (min-width: 1300px) {
+  footer#footer .qualifications {
+    width: 50%;
+  }
 }
