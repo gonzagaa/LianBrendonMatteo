@@ -1,0 +1,30 @@
+nav {
+    background-color: rgba(0, 0, 0, 0.700);
+}
+
+#sistema {
+    background-color: #d8d8d8;
+}
+
+#sistema .swiper {
+    margin-top: 5rem;
+  }
+
+  #sistema .swiper-wrapper {
+    width: 80%;
+  }
+  
+  #sistema .swiper-slide img {
+    width: 100%;
+  }
+  
+  #sistema svg {
+    fill: #fff;
+    transition: all 200ms ease-in-out;
+    transform: scale(1.8);
+  }
+  
+  #sistema svg:hover {
+    fill: #007606;
+    transform: scale(2);
+  }

@@ -45,19 +45,3 @@ ScrollReveal().reveal(
 ScrollReveal().reveal('#values .card', { distance: '200px', scale: 0.5, opacity: 0.5 ,duration: 700, easing: 'ease-in-out'});
 
 ScrollReveal().reveal('#areas details', { distance: '400px', origin: 'top', duration: 500, easing: 'ease-in-out'});
-
-var swiper = new Swiper(".swiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    keyboard: true,
-    crossFade: true,
-  });

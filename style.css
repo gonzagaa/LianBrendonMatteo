@@ -265,14 +265,13 @@ html {
 #system {
   background-color: #E1E1E1;
  
-  -webkit-box-shadow: inset 0px 1px 30px 5px rgba(0, 0, 0, 0.425);
-  -moz-box-shadow: inset 0px 1px 30px 5px rgba(0, 0, 0, 0.424);
-  box-shadow: inset 0px 1px 30px 5px rgba(0, 0, 0, 0.375);
+  -webkit-box-shadow: inset 0px 1px 30px 5px rgba(0, 0, 0, 0.238);
+  -moz-box-shadow: inset 0px 1px 30px 5px rgba(0, 0, 0, 0.26);
+  box-shadow: inset 0px 1px 30px 5px rgba(0, 0, 0, 0.213);
 }
 
 #system img {
-  width: 70%;
-
+  width: 50%;
   margin-bottom: 3rem;
 }
 
@@ -305,24 +304,6 @@ html {
 #system a button:hover {
   cursor: pointer;
   background-color: #007606;
-}
-
-#system .swiper {
-  margin-top: 5rem;
-}
-
-#system .swiper-slide img {
-  width: 80%;
-}
-
-#system svg {
-  fill: #015A06;
-  transition: all 200ms ease-in-out;
-}
-
-#system svg:hover {
-  fill: #007606;
-  transform: scale(1.1);
 }
 
 /* values =================== */ 
@@ -476,6 +457,21 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   line-height: 1.5;
 }
 
+#bio .content .text p span {
+  font-weight: 600;
+}
+
+#bio .content .text p span a {
+  font-weight: 700;
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
+
+#bio .content .text p span a:hover {
+  cursor: pointer;
+  color: #ffbb00;
+}
+
 /* buttonWhatsapp =================== */
 #buttonWhatsapp {
   position: fixed;
@@ -540,7 +536,18 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   }
 
   section#system img {
-    width: 20rem;
+    width: 40%;
+  }
+
+  section#system .content {
+    text-align: right;
+  }
+
+  section#system .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
   }
 
   section#system h2 {
