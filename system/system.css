@@ -12,6 +12,7 @@ nav {
 
   #sistema .swiper-wrapper {
     width: 80%;
+    margin-top: 2rem;
   }
   
   #sistema .swiper-slide img {
@@ -27,4 +28,24 @@ nav {
   #sistema svg:hover {
     fill: #007606;
     transform: scale(2);
+  }
+
+  #sistema .content p {
+    font-weight: 600;
+    line-height: 1.3;
+
+    margin-top: 3rem;
+  }
+
+  #sistema .content p a,
+  #sistema .content p span {
+    font-weight: 700;
+    color: #007606;
+    text-decoration: none;
+
+    transition: all 200ms ease-in-out;
+  }
+
+  #sistema .content p a:hover {
+    color: #005d05;
   }
