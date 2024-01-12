@@ -516,6 +516,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
   section#services .custom-shape-divider-bottom-1698431678 {
     display: initial;
+    margin-bottom: -2px;
   }
 
   section#services .wrapper {
