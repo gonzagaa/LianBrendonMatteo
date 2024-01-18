@@ -153,6 +153,8 @@ html {
     width: 100%;
     overflow: hidden;
     line-height: 0;
+
+    display: none;
 }
 
 .custom-shape-divider-bottom-1705539245 svg {
@@ -502,6 +504,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
       background-repeat: initial;
       background-size: initial;
       background-position: initial;
+  }
+
+  .custom-shape-divider-bottom-1705539245 {
+    display: inherit;
   }
 
   header#home .banner video {
