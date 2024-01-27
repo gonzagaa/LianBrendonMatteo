@@ -74,6 +74,25 @@ nav {
     font-size: 2rem;
 }
 
+/* buttonWhatsapp =================== */
+#Whatsapp {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 100;  
+    transition: all 300ms ease-in-out;
+  }
+  
+  #Whatsapp img {
+    width: 6rem;
+    transition: all 300ms ease-in-out;
+  }
+
+  #Whatsapp img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
 @media (min-width: 1300px) {
     section#contato .wrapper .content {
         display: grid;
