@@ -47,6 +47,13 @@ html {
     padding-block: 10rem;
   }
 
+  audio {
+    background-color: var(--secondary-color);
+    border-radius: 3rem;
+    padding: .3rem;
+    box-shadow: 2px 2px 10px #00000047;
+  }
+
 /* HOME =================== */
 #home {
   background-image: url(./assets/fundo\ mobile\ 2.jpg);
